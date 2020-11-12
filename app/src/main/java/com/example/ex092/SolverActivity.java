@@ -106,5 +106,4 @@ public class SolverActivity extends AppCompatActivity implements View.OnCreateCo
         }
         return super.onContextItemSelected(item);
     }
-
-    }
+}
