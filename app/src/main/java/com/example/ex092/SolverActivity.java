@@ -12,19 +12,43 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+/**
+ * The type Solver activity.
+ */
 public class SolverActivity extends AppCompatActivity implements View.OnCreateContextMenuListener {
     Intent gi;
-
-    ListView sequenceList;
-
     TextView info;
 
-    float firstNumber, numD, sequenceSum;
+    /**
+     * The Sequence list.
+     */
+    ListView sequenceList;
 
+    /**
+     * The First number.
+     */
+    float firstNumber,
+    /**
+     * The Num d.
+     */
+    numD, /**
+     * The Sequence sum.
+     */
+    sequenceSum;
+
+    /**
+     * The Sequence type. - Geometric sequence / Arithmetic sequence.
+     */
     boolean sequenceType;
 
+    /**
+     * The Sequence arr.
+     */
     String[] sequenceArr;
 
+    /**
+     * The Sum values arr.
+     */
     float[] sumValuesArr;
 
     @Override
@@ -54,10 +78,18 @@ public class SolverActivity extends AppCompatActivity implements View.OnCreateCo
         sequenceList.setAdapter(adp);
     }
 
+    /**
+     * Return to main activity.
+     *
+     * @param view the view
+     */
     public void returnMain(View view) {
         finish();
     }
 
+    /**
+     * Calculate arr values.
+     */
     public void calculateArrValues(){
         for (int i = 0; i < 20; i++){
             // Arithmetic sequence (true)
@@ -74,6 +106,12 @@ public class SolverActivity extends AppCompatActivity implements View.OnCreateCo
         }
     }
 
+    /**
+     * Fix value string.
+     *
+     * @param value the value
+     * @return the string
+     */
     public String fixValue(float value){
         // fix the value (without 0.0)
         if ((float)((int)value) == value) {
@@ -82,6 +120,13 @@ public class SolverActivity extends AppCompatActivity implements View.OnCreateCo
         return String.valueOf(value);
     }
 
+    /**
+     * Create a Context Menu
+     *
+     * @param menu the munu
+     * @param v the view
+     * @param menuInfo the menu Info
+     */
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo) {
@@ -90,6 +135,11 @@ public class SolverActivity extends AppCompatActivity implements View.OnCreateCo
         menu.add("Sum sequence");
     }
 
+    /**
+     * onContextItemSelected listener
+     *
+     * @param item the item of munu
+     */
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();

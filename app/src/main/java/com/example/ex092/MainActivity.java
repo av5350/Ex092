@@ -9,14 +9,32 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
     Intent si;
 
+    /**
+     * The Sequence type.
+     */
     Switch sequenceType;
 
-    EditText firstNum, sequenceD;
+    /**
+     * The First num.
+     */
+    EditText firstNum, /**
+     * The Sequence d.
+     */
+    sequenceD;
 
-    String firstValue, stringD;
+    /**
+     * The First value.
+     */
+    String firstValue, /**
+     * The String d.
+     */
+    stringD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
         si = new Intent(this, SolverActivity.class);
     }
 
+    /**
+     * Go solver activity.
+     *
+     * @param view the view
+     */
     public void goSolver(View view) {
         firstValue = firstNum.getText().toString();
         stringD = sequenceD.getText().toString();
