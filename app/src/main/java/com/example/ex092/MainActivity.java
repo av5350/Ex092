@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Go solver activity.
+     * Get the fields from the text views, check if they are good
+     * if so, go the the second activity, else - print(with toast) an error massage.
      *
      * @param view the view
      */

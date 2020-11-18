@@ -88,7 +88,7 @@ public class SolverActivity extends AppCompatActivity implements View.OnCreateCo
     }
 
     /**
-     * Calculate arr values.
+     * Calculate the values of the array.
      */
     public void calculateArrValues(){
         for (int i = 0; i < 20; i++){
@@ -136,7 +136,7 @@ public class SolverActivity extends AppCompatActivity implements View.OnCreateCo
     }
 
     /**
-     * onContextItemSelected listener
+     * Display the sum or the position by the item
      *
      * @param item the item of munu
      */
