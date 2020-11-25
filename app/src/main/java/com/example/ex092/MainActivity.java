@@ -11,6 +11,12 @@ import android.widget.Toast;
 
 /**
  * The type Main activity.
+ *
+ *  @author		Itey Weintraub <av5350@bs.amalnet.k12.il>
+ *  @version	1
+ *  @since		16/11/2020
+ *  short description:
+ *      get date to calculate for the solver acrivity
  */
 public class MainActivity extends AppCompatActivity {
     Intent si;

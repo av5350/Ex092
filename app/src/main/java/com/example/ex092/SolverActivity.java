@@ -14,6 +14,12 @@ import android.widget.TextView;
 
 /**
  * The type Solver activity.
+ *
+ *  @author		Itey Weintraub <av5350@bs.amalnet.k12.il>
+ *  @version	1
+ *  @since		16/11/2020
+ *  short description:
+ *      Solve the sequence and show the result
  */
 public class SolverActivity extends AppCompatActivity implements View.OnCreateContextMenuListener {
     Intent gi;
